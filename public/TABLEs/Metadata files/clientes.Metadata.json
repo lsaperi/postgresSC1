@@ -1,0 +1,159 @@
+{
+  "Column": [
+    {
+      "attcollation": null,
+      "attcompression": "\u0000",
+      "attdefault": "nextval('clientes_id_seq'::regclass)",
+      "attfdwoptions": null,
+      "attgenerated": "\u0000",
+      "attidentity": "\u0000",
+      "attislocal": true,
+      "attlen": 4,
+      "attmissingval": null,
+      "attname": "id",
+      "attndims": 0,
+      "attnotnull": true,
+      "attnum": 1,
+      "attoptions": null,
+      "attstorage": "p",
+      "atttypid": "integer",
+      "atttypmod": -1,
+      "kind": "r",
+      "name": "clientes",
+      "schema": "public"
+    },
+    {
+      "attcollation": "default",
+      "attcompression": "\u0000",
+      "attdefault": null,
+      "attfdwoptions": null,
+      "attgenerated": "\u0000",
+      "attidentity": "\u0000",
+      "attislocal": true,
+      "attlen": -1,
+      "attmissingval": null,
+      "attname": "nombre",
+      "attndims": 0,
+      "attnotnull": false,
+      "attnum": 2,
+      "attoptions": null,
+      "attstorage": "x",
+      "atttypid": "character varying",
+      "atttypmod": 104,
+      "kind": "r",
+      "name": "clientes",
+      "schema": "public"
+    }
+  ],
+  "Constraints": [
+    {
+      "check_expr": null,
+      "Columns": [
+        {
+          "attname": "id",
+          "conkey": [
+            1
+          ],
+          "conname": "clientes_id_not_null",
+          "conrelname": "clientes",
+          "schema": "public"
+        }
+      ],
+      "conbin": null,
+      "condeferrable": false,
+      "condeferred": false,
+      "conexclop": null,
+      "confdeltype": " ",
+      "conffeqop": [],
+      "confkey": null,
+      "confmatchtype": " ",
+      "confrelid": "-",
+      "confupdtype": " ",
+      "conindid": "-",
+      "coninhcount": 0,
+      "conislocal": true,
+      "conkey": [
+        1
+      ],
+      "conname": "clientes_id_not_null",
+      "connoinherit": false,
+      "conpfeqop": [],
+      "conppeqop": [],
+      "conrelname": "clientes",
+      "contype": "n",
+      "contypid": "-",
+      "convalidated": true,
+      "kind": "r",
+      "name": "clientes",
+      "ref_columns": [],
+      "ref_schema": null,
+      "schema": "public"
+    },
+    {
+      "check_expr": null,
+      "Columns": [
+        {
+          "attname": "id",
+          "conkey": [
+            1
+          ],
+          "conname": "clientes_pkey",
+          "conrelname": "clientes",
+          "schema": "public"
+        }
+      ],
+      "conbin": null,
+      "condeferrable": false,
+      "condeferred": false,
+      "conexclop": null,
+      "confdeltype": " ",
+      "conffeqop": [],
+      "confkey": null,
+      "confmatchtype": " ",
+      "confrelid": "-",
+      "confupdtype": " ",
+      "conindid": "clientes_pkey",
+      "coninhcount": 0,
+      "conislocal": true,
+      "conkey": [
+        1
+      ],
+      "conname": "clientes_pkey",
+      "connoinherit": true,
+      "conpfeqop": [],
+      "conppeqop": [],
+      "conrelname": "clientes",
+      "contype": "p",
+      "contypid": "-",
+      "convalidated": true,
+      "kind": "r",
+      "name": "clientes",
+      "ref_columns": [],
+      "ref_schema": null,
+      "schema": "public"
+    }
+  ],
+  "General": [
+    {
+      "access_method": "heap",
+      "cluster_index": null,
+      "column_order": "id,nombre",
+      "force_rls": false,
+      "kind": "r",
+      "name": "clientes",
+      "of_type": null,
+      "owner": "postgres",
+      "persistence": "LOGGED",
+      "reloptions": null,
+      "relreplident": "d",
+      "replica_index": null,
+      "row_level_security": false,
+      "schema": "public",
+      "tablespace": null
+    }
+  ],
+  "Indexes": [],
+  "Inherites": [],
+  "Rewrite": [],
+  "Triggers": []
+}
